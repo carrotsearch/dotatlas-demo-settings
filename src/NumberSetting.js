@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { Col, InputNumber, Row, Slider } from 'antd';
+import { Slider, NumericInput } from "@blueprintjs/core";
 
 export const NumberSetting = ({ initialValue = 0, onChange }) => {
   const [ inputValue, setInputValue ] = useState(initialValue);
@@ -11,27 +11,24 @@ export const NumberSetting = ({ initialValue = 0, onChange }) => {
   };
 
   return (
-      <Row>
-        <Col span={12}>
-          <Slider
-              tooltipVisible={false}
-              min={0}
-              max={1}
-              onChange={valueChanged}
-              value={typeof inputValue === 'number' ? inputValue : 0}
-              step={0.01}
-          />
-        </Col>
-        <Col span={4}>
-          <InputNumber
-              min={0}
-              max={1}
-              style={{ marginLeft: 16 }}
-              step={0.01}
-              value={inputValue}
-              onChange={valueChanged}
-          />
-        </Col>
-      </Row>
+      <div>
+        <Slider
+            min={0}
+            max={1}
+            onChange={valueChanged}
+            value={typeof inputValue === 'number' ? inputValue : 0}
+            stepSize={0.01}
+            labelStepSize={0.1}
+        />
+        <NumericInput
+            min={0}
+            max={1}
+            style={{ marginLeft: 16 }}
+            minorStepSize={0.01}
+            stepSize={0.1}
+            value={inputValue}
+            onValueChange={valueChanged}
+        />
+      </div>
   );
 };
