@@ -1,0 +1,11 @@
+.NumberSetting .bp3-slider {
+  bottom: -0.35rem;
+}
+.NumberSetting .SliderContainer {
+  width: 75%;
+  padding-right: 1rem;
+}
+.NumberSetting .InputContainer {
+  width: 25%;
+  min-width: 4rem;
+}

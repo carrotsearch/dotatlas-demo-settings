@@ -3,21 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@blueprintjs/core": "^3.19.1",
+    "@carrotsearch/dotatlas": "^0.3.0-alpha1",
+    "@craco/craco": "^5.6.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "@carrotsearch/dotatlas": "^0.3.0-alpha1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "react-scripts": "3.4.0",
-
-    "@blueprintjs/core": "^3.19.1",
-    "@craco/craco": "^5.6.3"
+    "react-scripts": "3.4.0"
   },
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test":  "craco test",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

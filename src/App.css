@@ -1,1 +1,23 @@
 @import '~@blueprintjs/core/lib/css/blueprint.css';
+
+.app {
+  min-height: 100vh;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 24rem;
+}
+
+aside {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 24rem;
+  overflow-y: auto;
+  padding: 1em;
+}

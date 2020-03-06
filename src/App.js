@@ -14,9 +14,13 @@ function App() {
   }, []);
 
   return (
-      <div style={{minHeight: "100vh"}}>
-        <DotAtlas options={dotAtlasOptions} elevationPow={elevationPow} />
-        <NumberSetting onChange={v => setElevationPow(v)} initialValue={elevationPow} />
+      <div className="app" style={{minHeight: "100vh"}}>
+        <main>
+          <DotAtlas options={dotAtlasOptions} elevationPow={elevationPow} />
+        </main>
+        <aside>
+          <NumberSetting onChange={v => setElevationPow(v)} initialValue={elevationPow} />
+        </aside>
       </div>
   );
 }
